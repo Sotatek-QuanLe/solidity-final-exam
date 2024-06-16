@@ -1,0 +1,39 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-ignition": "^0.15.1",
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@nomicfoundation/ignition-core": "^0.15.1",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "chai": "^4.2.0",
+    "ethers": "^6.12.1",
+    "hardhat": "^2.22.3",
+    "hardhat-deploy": "^0.12.4",
+    "hardhat-gas-reporter": "^1.0.8",
+    "hardhat-log-remover": "^2.0.2",
+    "solidity-coverage": "^0.8.1",
+    "ts-node": ">=8.0.0",
+    "typechain": "^8.3.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "@openzeppelin/contracts-upgradeable": "^5.0.2",
+    "@openzeppelin/hardhat-upgrades": "^3.1.0",
+    "dotenv": "^16.4.5"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test --network hardhat",
+    "coverage": "hardhat coverage",
+    "gas-report": "set REPORT_GAS=true && hardhat test --network hardhat"
+  }
+}
